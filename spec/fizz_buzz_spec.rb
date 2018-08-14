@@ -1,7 +1,7 @@
 require './lib/fizz_buzz'
 describe 'fizz_buzz' do
 
-    it "returns 'fizzbuzz' if number is divisible by 3 and 5" do
+    it "returns 'fizzbuzz' if number is divisible by 15" do
         expect(fizz_buzz(15)).to eq 'fizzbuzz'
     end   
 

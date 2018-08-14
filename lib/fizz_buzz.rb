@@ -2,11 +2,11 @@ def fizz_buzz(number)
 
     if number == String 
     'You need to enter a number, not a word' 
-    elsif number % 15 == 0
+    elsif has_zero_remainder?(number, 15)
         'fizzbuzz'
-    elsif number % 3 == 0
+    elsif has_zero_remainder?(number, 3)
         'fizz'
-    elsif number % 5 == 0
+    elsif has_zero_remainder?(number, 5)
         'buzz'
     elsif number < 0 
         'Don`t use a negative number'             
@@ -14,3 +14,7 @@ def fizz_buzz(number)
         number
     end      
 end
+
+def has_zero_remainder?(number, divider)
+    number % divider == 0
+end   
