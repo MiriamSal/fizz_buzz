@@ -14,10 +14,10 @@ describe 'fizz_buzz' do
     it 'returns 1 if number is 1' do
         expect(fizz_buzz(1)).to eq 1
     end  
-    it "returns 'Don`t use a negative number' if number is < 0" do
-        expect(fizz_buzz(-1)).to eq 'Don`t use a negative number'
-    end 
-    it "returns 'You need to enter a number, not a word' if input is a string?" do
-        expect(fizz_buzz(String)).to eq 'You need to enter a number, not a word'
+    it "returns 'You need to enter a positive number'" do
+        expect(fizz_buzz(-1)).to eq 'You need to enter a positive number'
+    end  
+    it "returns 'You need to enter a positive number'" do
+        expect(fizz_buzz("hej")).to eq 'You need to enter a positive number'
     end    
 end
